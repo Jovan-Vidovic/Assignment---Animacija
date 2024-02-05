@@ -1,0 +1,93 @@
+.main {
+    background-color: #050210;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@keyframes my-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes my-animation2 {
+    from {
+        width: 0px;
+        height: 0px;
+        filter: opacity(0.1);
+    }
+    100% {
+        width: 250px;
+        height: 250px;
+        filter: opacity(0.07);
+    }
+}
+@keyframes my-animation3 {
+    from {
+        width: 0px;
+        height: 0px;
+        filter: opacity(0.1);
+    }
+    100% {
+        width: 250px;
+        height: 250px;
+        filter: opacity(0.07);
+    }
+}
+.krug-1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    filter: blur(50px);
+    background: conic-gradient(#55fb9f, #b97aff, #55fb9f, #fb5dad, #55fb9f);
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.krug-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: conic-gradient(#55fb9f, #b97aff, #55fb9f, #fb5dad, #55fb9f);
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.krug-3 {
+    position: absolute;
+    background-color: #050210;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+.krug-4 {
+    position: absolute;
+    background-color: #b97aff;
+    border-radius: 100%;
+    animation-name: my-animation2;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+.krug-5 {
+    position: absolute;
+    background-color: #b97aff;
+    border-radius: 100%;
+    filter: opacity(0);
+    animation-name: my-animation3;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
